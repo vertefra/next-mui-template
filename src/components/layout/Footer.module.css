@@ -1,0 +1,19 @@
+/* components/layout/Footer.module.css */
+.footer {
+    padding: var(--spacing-medium);
+    background-color: var(--background-color);
+    text-align: center;
+    color: var(--secondary-color);
+    border-top: 1px solid var(--primary-color);
+  }
+  
+  .links a {
+    margin: 0 8px;
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    color: var(--accent-color);
+  }
+  

@@ -1,0 +1,28 @@
+/* components/sections/Hero.module.css */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: url('/path-to-your-hero-image.jpg') center/cover no-repeat;
+    color: var(--secondary-color);
+  }
+  
+  .content {
+    text-align: center;
+    max-width: 600px;
+    padding: 0 16px;
+  }
+  
+  /* Scoped classes for headings */
+  .heroTitle {
+    font-size: var(--heading-font-size);
+    font-family: var(--font-family);
+    margin-bottom: 16px;
+  }
+  
+  .heroDescription {
+    font-size: var(--base-font-size);
+    margin-bottom: 24px;
+  }
+  

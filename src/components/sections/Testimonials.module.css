@@ -1,0 +1,38 @@
+/* components/sections/Testimonials.module.css */
+.testimonials {
+    padding: var(--spacing-large);
+    background-color: var(--highlight);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: var(--subheading-font-size);
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  .testimonialList {
+    display: flex;
+    gap: var(--spacing-medium);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    flex: 1 1 200px;
+    max-width: 300px;
+    padding: var(--spacing-medium);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback {
+    font-size: var(--base-font-size);
+    margin-bottom: var(--spacing-small);
+  }
+  
+  .clientName {
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  

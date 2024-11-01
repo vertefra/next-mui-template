@@ -1,0 +1,34 @@
+/* components/sections/About.module.css */
+.about {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-large);
+    background-color: var(--background-color);
+  }
+  
+  .content {
+    flex: 1;
+    padding-right: var(--spacing-medium);
+  }
+  
+  .title {
+    font-size: var(--subheading-font-size);
+    margin-bottom: var(--spacing-small);
+  }
+  
+  .description {
+    font-size: var(--base-font-size);
+  }
+  
+  .imageWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  

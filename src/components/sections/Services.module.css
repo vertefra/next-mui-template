@@ -1,0 +1,37 @@
+/* components/sections/Services.module.css */
+.services {
+    padding: var(--spacing-large);
+    background-color: var(--background-color);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: var(--subheading-font-size);
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  .serviceList {
+    display: flex;
+    gap: var(--spacing-medium);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    flex: 1 1 200px;
+    max-width: 300px;
+    padding: var(--spacing-medium);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardTitle {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-small);
+  }
+  
+  .cardDescription {
+    font-size: var(--base-font-size);
+  }
+  

@@ -1,0 +1,23 @@
+/* components/sections/Contact.module.css */
+.contact {
+    padding: var(--spacing-large);
+    background-color: var(--background-color);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: var(--subheading-font-size);
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  .description {
+    font-size: var(--base-font-size);
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  .calendlyWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-medium);
+  }
+  

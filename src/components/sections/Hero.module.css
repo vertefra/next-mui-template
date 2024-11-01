@@ -1,28 +1,21 @@
 /* components/sections/Hero.module.css */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    background: url('/path-to-your-hero-image.jpg') center/cover no-repeat;
-    color: var(--secondary-color);
-  }
-  
-  .content {
-    text-align: center;
-    max-width: 600px;
-    padding: 0 16px;
-  }
-  
-  /* Scoped classes for headings */
-  .heroTitle {
-    font-size: var(--heading-font-size);
-    font-family: var(--font-family);
-    margin-bottom: 16px;
-  }
-  
-  .heroDescription {
-    font-size: var(--base-font-size);
-    margin-bottom: 24px;
-  }
-  
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(245, 239, 239, 0.9), rgba(245, 239, 239, 0.9)), 
+              url('/path-to-your-hero-image.jpg') center/cover no-repeat;
+  color: var(--secondary-color);
+}
+
+.heroTitle {
+  color: var(--accent-color);
+  font-size: var(--heading-font-size);
+  margin-bottom: var(--spacing-small);
+}
+
+.heroDescription {
+  color: var(--secondary-color);
+  font-size: var(--body-font-size);
+}

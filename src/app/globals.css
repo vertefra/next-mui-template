@@ -1,42 +1,33 @@
+/* styles/globals.css */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Theme Colors */
+  --primary-color: #F5EFEF;      /* Background color */
+  --secondary-color: #262626;    /* Text color */
+  --accent-color: #A64D79;       /* Accent for buttons, links, etc. */
+  --highlight-color: #FFB3B3;    /* Secondary accent, for hover states */
+  --background-color: #FFFFFF;   /* General background color */
+
+  /* Typography */
+  --font-family: 'Lora', serif;
+  --base-font-size: 16px;
+  --heading-font-size: 2rem;
+  --subheading-font-size: 1.5rem;
+  --body-font-size: 1rem;
+  --small-font-size: 0.875rem;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-xlarge: 32px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  color: var(--secondary-color);
+  background-color: var(--background-color);
   margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  padding: 0;
+  line-height: 1.6;
 }

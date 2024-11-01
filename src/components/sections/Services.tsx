@@ -1,5 +1,9 @@
+'use client'
+
 // components/sections/Services.tsx
+import { useRef } from 'react';
 import styles from './Services.module.css';
+import useInView from '@/hooks/useInView';
 
 const servicesData = [
   { title: 'Service One', description: 'Description of service one.' },
@@ -8,8 +12,11 @@ const servicesData = [
 ];
 
 const Services = () => {
+  const ref = useRef(null);
+  const isVisible = useInView(ref);
+
   return (
-    <section className={styles.services}>
+    <section ref={ref} className={`${styles.contact} ${isVisible ? styles.slideIn : ''}`}>
       <h2 className={styles.title}>Our Services</h2>
       <div className={styles.serviceList}>
         {servicesData.map((service, index) => (

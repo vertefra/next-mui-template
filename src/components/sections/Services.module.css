@@ -1,37 +1,62 @@
 /* components/sections/Services.module.css */
+
 .services {
-    padding: var(--spacing-large);
-    background-color: var(--background-color);
-    text-align: center;
+  padding: var(--spacing-large);
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  text-align: center; /* Center the entire section */
+}
+
+.title {
+  font-size: var(--subheading-font-size);
+  color: var(--accent-color);
+  margin-bottom: var(--spacing-medium);
+  text-align: center; /* Center the title text */
+}
+.serviceList {
+  display: flex;
+  gap: var(--spacing-medium);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 200px;
+  max-width: 300px;
+  padding: var(--spacing-medium);
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-small);
+}
+
+.cardDescription {
+  font-size: var(--base-font-size);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
   }
-  
-  .title {
-    font-size: var(--subheading-font-size);
-    margin-bottom: var(--spacing-medium);
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
+
+.about {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
   
-  .serviceList {
-    display: flex;
-    gap: var(--spacing-medium);
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .card {
-    flex: 1 1 200px;
-    max-width: 300px;
-    padding: var(--spacing-medium);
-    background-color: var(--primary-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .cardTitle {
-    font-size: 1.25rem;
-    margin-bottom: var(--spacing-small);
-  }
-  
-  .cardDescription {
-    font-size: var(--base-font-size);
-  }
-  
+.slideIn {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideIn 0.6s ease forwards;
+}

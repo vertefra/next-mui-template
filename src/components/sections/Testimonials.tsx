@@ -1,23 +1,19 @@
 // components/sections/Testimonials.tsx
+"use client";
+
+import { useRef } from 'react';
+import useInView from '@/hooks/useInView';
 import styles from './Testimonials.module.css';
 
-const testimonialsData = [
-  { name: 'Client One', feedback: 'This service was exceptional and exceeded all my expectations!' },
-  { name: 'Client Two', feedback: 'A fantastic experience with remarkable attention to detail.' },
-  { name: 'Client Three', feedback: 'Professional and reliable - highly recommended!' },
-];
-
 const Testimonials = () => {
+  const ref = useRef(null);
+  const isVisible = useInView(ref);
+
   return (
-    <section className={styles.testimonials}>
+    <section ref={ref} className={`${styles.testimonials} ${isVisible ? styles.slideIn : ''}`}>
       <h2 className={styles.title}>What Our Clients Say</h2>
       <div className={styles.testimonialList}>
-        {testimonialsData.map((testimonial, index) => (
-          <div key={index} className={styles.card}>
-            <p className={styles.feedback}>{testimonial.feedback}</p>
-            <p className={styles.clientName}>- {testimonial.name}</p>
-          </div>
-        ))}
+        {/* List your testimonials here */}
       </div>
     </section>
   );
